@@ -1,0 +1,21 @@
+pluginManagement {
+
+    ext.kotlin_version = "1.5.0"
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Sign3 fingerprint"
+include ':app'
+include ':fpjs-pro'
